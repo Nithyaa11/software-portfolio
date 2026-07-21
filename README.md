@@ -1,75 +1,129 @@
-# React + TypeScript + Vite
+# Software Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and scalable software engineering portfolio built with React, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+Designed with a data-driven architecture, the portfolio showcases my projects, experience, technical skills, certifications, and leadership while remaining easy to maintain and extend as my career grows.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> **Status:** Under active development.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Live Demo
 
-## Expanding the ESLint configuration
+Coming Soon
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Responsive design
+- Modern and minimal UI
+- Fast and lightweight
+- Data-driven architecture
+- Reusable React components
+- Accessible design
+- Performance optimized
+- SEO ready
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+## Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Frontend | React, TypeScript, Vite |
+| Styling | Tailwind CSS, shadcn/ui |
+| Animation | Framer Motion |
+| Deployment | Vercel |
+| Version Control | Git, GitHub |
+
+---
+
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── data/
+├── hooks/
+├── styles/
+├── types/
+├── utils/
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
 
+```bash
+git clone https://github.com/<username>/portfolio.git
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Roadmap
+
+### Version 1
+
+- Responsive portfolio
+- About section
+- Experience
+- Projects
+- Skills
+- Certifications
+- Leadership
+- Contact
+
+### Future Enhancements
+
+- AI-powered portfolio assistant
+- Role-based portfolio views
+- Project filtering
+- Blog integration
+- Dark mode
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+SriNithya Malladi
+
+## Connect
+
+- [GitHub](https://github.com/Nithyaa11github)
+- [LinkedIn](https://www.linkedin.com/in/srinithya-malladi)
