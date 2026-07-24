@@ -1,7 +1,13 @@
-import { name } from "@/utils/test";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
 
 function App() {
-  return <h1>{name}</h1>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 }
 
 export default App;
