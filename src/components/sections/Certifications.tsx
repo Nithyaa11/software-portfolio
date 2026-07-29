@@ -1,23 +1,14 @@
+import Section from "@/components/common/Section";
 import { certifications } from "@/data/certifications";
 import { Award } from "lucide-react";
 
 function Certifications() {
   return (
-    <section
+    <Section
       id="certifications"
-      className="mx-auto max-w-7xl px-6 py-16 md:py-20"
+      title="Certifications"
+      description="Certifications that reflect my continuous learning in cloud, software development, and emerging technologies."
     >
-      <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold">
-          Certifications
-        </h2>
-
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Certifications that reflect my continuous learning in cloud,
-          software development, and emerging technologies.
-        </p>
-      </div>
-
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {certifications.map((cert) => (
           <div
@@ -36,7 +27,7 @@ function Certifications() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
 

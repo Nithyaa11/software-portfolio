@@ -1,25 +1,15 @@
-/*import { GitHub, ExternalLink } from "lucide-react";*/
+import Section from "@/components/common/Section";
 import { FaGithub } from "react-icons/fa";
 import { ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
 
 function Projects() {
   return (
-    <section
+    <Section
       id="projects"
-      className="mx-auto max-w-7xl px-6 py-16 md:py-20"
+      title="Projects"
+      description="A selection of projects that showcase my experience in backend development, full stack applications, and problem solving."
     >
-      <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold">
-          Projects
-        </h2>
-
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          A selection of projects that showcase my experience in backend
-          development, full stack applications, and problem solving.
-        </p>
-      </div>
-
       <div className="grid gap-8 lg:grid-cols-2">
         {projects.map((project) => (
           <div
@@ -89,7 +79,7 @@ function Projects() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
 

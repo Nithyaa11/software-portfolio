@@ -1,23 +1,14 @@
+import Section from "@/components/common/Section";
 import { leadership } from "@/data/leadership";
 import { Users } from "lucide-react";
 
 function Leadership() {
   return (
-    <section
+    <Section
       id="leadership"
-      className="mx-auto max-w-7xl px-6 py-16 md:py-20"
+      title="Leadership & Activities"
+      description="Leadership roles and volunteer experiences that strengthened my teamwork, communication, and organizational skills."
     >
-      <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold">
-          Leadership & Activities
-        </h2>
-
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Leadership roles and volunteer experiences that strengthened my
-          teamwork, communication, and organizational skills.
-        </p>
-      </div>
-
       <div className="grid gap-6 md:grid-cols-2">
         {leadership.map((item) => (
           <div
@@ -40,7 +31,7 @@ function Leadership() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
 

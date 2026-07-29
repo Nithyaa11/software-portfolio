@@ -9,6 +9,7 @@ import Leadership from "@/components/sections/Leadership";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
 
+
 function App() {
   return (
     <>

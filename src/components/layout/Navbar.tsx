@@ -17,7 +17,7 @@ function Navbar() {
   );
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur">
+    <nav className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <a
@@ -33,7 +33,7 @@ function Navbar() {
             <a
               key={item.id}
               href={item.href}
-              className="text-sm font-medium transition-colors hover:text-primary"
+              className="text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-primary"
             >
               {item.label}
             </a>
@@ -47,7 +47,9 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button>Resume</Button>
+            <Button className="rounded-full px-6">
+              Resume
+            </Button>
           </a>
 
           {github && (
@@ -67,7 +69,11 @@ function Navbar() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger>
-              <Button variant="ghost" size="icon">
+              <Button
+                variant="ghost"
+                size="icon"
+                aria-label="Open menu"
+              >
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
@@ -78,7 +84,7 @@ function Navbar() {
                   <a
                     key={item.id}
                     href={item.href}
-                    className="text-lg font-medium transition-colors hover:text-primary"
+                    className="text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-primary"
                   >
                     {item.label}
                   </a>
@@ -91,7 +97,7 @@ function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button className="w-full">
+                  <Button className="w-full rounded-full">
                     Resume
                   </Button>
                 </a>

@@ -1,23 +1,13 @@
+import Section from "@/components/common/Section";
 import { experiences } from "@/data/experience";
 
 function Experience() {
   return (
-    <section
+    <Section
       id="experience"
-      className="mx-auto max-w-7xl px-6 py-16 md:py-20"
+      title="Experience"
+      description="Professional experience that strengthened my software engineering, backend development, and full stack development skills."
     >
-      <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold">
-          Experience
-        </h2>
-
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Professional experience that strengthened my
-          software engineering, backend development,
-          and full stack development skills.
-        </p>
-      </div>
-
       {experiences.map((experience) => (
         <div
           key={experience.company}
@@ -45,14 +35,12 @@ function Experience() {
 
           <ul className="mt-8 list-disc space-y-3 pl-6">
             {experience.responsibilities.map((item) => (
-              <li key={item}>
-                {item}
-              </li>
+              <li key={item}>{item}</li>
             ))}
           </ul>
         </div>
       ))}
-    </section>
+    </Section>
   );
 }
 

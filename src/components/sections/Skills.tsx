@@ -1,23 +1,13 @@
+import Section from "@/components/common/Section";
 import { skills } from "@/data/skills";
 
 function Skills() {
   return (
-    <section
+    <Section
       id="skills"
-      className="mx-auto max-w-7xl px-6 py-16 md:py-20"
+      title="Skills"
+      description="Technologies and tools I use to build modern applications."
     >
-      <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold">
-          Skills
-        </h2>
-
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Technologies, tools, and concepts I've
-          worked with throughout my academic,
-          personal, and professional journey.
-        </p>
-      </div>
-
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
         {skills.map((category) => (
           <div
@@ -41,7 +31,7 @@ function Skills() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
 
