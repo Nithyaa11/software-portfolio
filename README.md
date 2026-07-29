@@ -137,5 +137,5 @@ This project is licensed under the MIT License.
 
 ## Connect
 
-- **Portfolio:** https://software-portfolio-ashy.vercel.app/
+- **Portfolio:** https://software-portfolio-srinithya.vercel.app/
 - **LinkedIn:** https://www.linkedin.com/in/srinithya-malladi
