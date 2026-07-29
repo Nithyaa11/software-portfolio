@@ -125,7 +125,7 @@ The portfolio is deployed on **Vercel**.
 
 Production URL:
 
-https://software-portfolio-ashy.vercel.app/
+https://software-portfolio-srinithya.vercel.app/
 
 ---
 
