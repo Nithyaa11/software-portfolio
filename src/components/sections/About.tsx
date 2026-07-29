@@ -30,7 +30,7 @@ function About() {
             </p>
 
             <p className="text-muted-foreground">
-              {profile.gpa}
+              {profile.cgpa}
             </p>
 
             <p className="text-muted-foreground">
