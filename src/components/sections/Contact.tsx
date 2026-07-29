@@ -1,6 +1,6 @@
 import Section from "@/components/common/Section";
 import { contact } from "@/data/contact";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 function Contact() {
   const emailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contact.email)}`;
@@ -25,16 +25,6 @@ function Contact() {
               {contact.email}
             </span>
           </a>
-
-          <div className="flex items-center gap-4 rounded-2xl bg-muted/50 p-4">
-            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary"><Phone className="h-5 w-5" /></span>
-            <span>{contact.phone}</span>
-          </div>
-
-          <div className="flex items-center gap-4 rounded-2xl bg-muted/50 p-4">
-            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary"><MapPin className="h-5 w-5" /></span>
-            <span>{contact.location}</span>
-          </div>
 
           <div className="pt-3">
             <a
