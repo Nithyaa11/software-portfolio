@@ -1,29 +1,30 @@
 # Software Portfolio
 
-A modern, responsive, and scalable software engineering portfolio built with React, TypeScript, Vite, and Tailwind CSS.
+A modern, responsive, and production-ready software engineering portfolio built with React, TypeScript, Vite, and Tailwind CSS.
 
-Designed with a data-driven architecture, the portfolio showcases my projects, experience, technical skills, certifications, and leadership while remaining easy to maintain and extend as my career grows.
+The portfolio showcases my projects, technical skills, certifications, leadership experience, and professional journey through a clean, scalable, and data-driven architecture designed for easy maintenance and future expansion.
 
-> **Status:** Under active development.
+> **Live Website:** https://software-portfolio-srinithya.vercel.app/
 
 ---
 
 ## Live Demo
 
-Coming Soon
+🌐 https://software-portfolio-srinithya.vercel.app/
 
 ---
 
 ## Features
 
-- Responsive design
-- Modern and minimal UI
-- Fast and lightweight
-- Data-driven architecture
+- Responsive design for desktop, tablet, and mobile
+- Modern and minimal user interface
+- Data-driven architecture for easy content management
 - Reusable React components
-- Accessible design
-- Performance optimized
-- SEO ready
+- Type-safe development with TypeScript
+- Accessible design following modern web practices
+- Optimized production build with Vite
+- Basic SEO and Open Graph support
+- Smooth navigation and responsive layout
 
 ---
 
@@ -32,8 +33,8 @@ Coming Soon
 | Category | Technologies |
 |----------|--------------|
 | Frontend | React, TypeScript, Vite |
-| Styling | Tailwind CSS, shadcn/ui |
-| Animation | Framer Motion |
+| Styling | Tailwind CSS v4, shadcn/ui |
+| Icons | Lucide React, React Icons |
 | Deployment | Vercel |
 | Version Control | Git, GitHub |
 
@@ -45,11 +46,14 @@ Coming Soon
 src/
 ├── assets/
 ├── components/
+│   ├── common/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
 ├── data/
 ├── hooks/
-├── styles/
+├── lib/
 ├── types/
-├── utils/
 ├── App.tsx
 └── main.tsx
 ```
@@ -58,31 +62,31 @@ src/
 
 ## Getting Started
 
-Clone the repository:
+### Clone the repository
 
 ```bash
-git clone https://github.com/<username>/portfolio.git
+git clone https://github.com/Nithyaa11github/software-portfolio.git
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run locally:
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+### Build for production
 
 ```bash
 npm run build
 ```
 
-Preview the production build:
+### Preview the production build
 
 ```bash
 npm run preview
@@ -90,12 +94,10 @@ npm run preview
 
 ---
 
-## Roadmap
+## Portfolio Sections
 
-### Version 1
-
-- Responsive portfolio
-- About section
+- Home
+- About
 - Experience
 - Projects
 - Skills
@@ -103,13 +105,27 @@ npm run preview
 - Leadership
 - Contact
 
-### Future Enhancements
+---
 
-- AI-powered portfolio assistant
-- Role-based portfolio views
-- Project filtering
+## Future Enhancements
+
+- Admin dashboard for portfolio management
+- Project CRUD functionality
+- Authentication
+- Project filtering and search
 - Blog integration
 - Dark mode
+- Analytics dashboard
+
+---
+
+## Deployment
+
+The portfolio is deployed on **Vercel**.
+
+Production URL:
+
+https://software-portfolio-ashy.vercel.app/
 
 ---
 
@@ -119,11 +135,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## Author
-
-SriNithya Malladi
-
 ## Connect
 
-- [GitHub](https://github.com/Nithyaa11github)
-- [LinkedIn](https://www.linkedin.com/in/srinithya-malladi)
+- **Portfolio:** https://software-portfolio-ashy.vercel.app/
+- **LinkedIn:** https://www.linkedin.com/in/srinithya-malladi
