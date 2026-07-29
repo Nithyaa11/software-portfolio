@@ -1,8 +1,10 @@
 import type { Profile } from "@/types/profile";
-import profileImage from "@/assets/images/My_profile_pic.jpg";
+import profileImage from "@/assets/images/profile.jpg";
 
 export const profile: Profile = {
   name: "Sai Leela SriNithya Malladi",
+
+  image: profileImage,
 
   roles: [
     "Python Full Stack Developer",
@@ -18,15 +20,16 @@ export const profile: Profile = {
   currentLocation: "Hyderabad, Telangana",
 
   homeLocation: "Guntur, Andhra Pradesh, India",
-
-  profileImage,
+  education: "B.Tech in Information Technology",
+  college: "Vasireddy Venkatadri Institute of Technology",
+  graduationYear: "2027",
 
   resumeUrl: "/resume/Nithya_Resume1.pdf",
 
   email: "srinithyaaa3.work@gmail.com",
 
   availability: "Open to Work",
-
+  
   socialLinks: [
     {
       platform: "GitHub",
@@ -37,6 +40,11 @@ export const profile: Profile = {
       platform: "LinkedIn",
       username: "srinithya-malladi",
       url: "https://www.linkedin.com/in/srinithya-malladi",
+    },
+    {
+      platform: "Email",
+      username: "Email",
+      url: "mailto:srinithyaaa3.work@gmail.com",
     },
   ],
 

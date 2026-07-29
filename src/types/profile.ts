@@ -1,5 +1,5 @@
 export interface SocialLink {
-  platform: string;
+  platform: "GitHub" | "LinkedIn" | "Email";
   username: string;
   url: string;
 }
@@ -11,25 +11,21 @@ export interface CTAButton {
 
 export interface Profile {
   name: string;
-
+  image: string;
   roles: string[];
-
   tagline: string;
-
   shortBio: string;
-
   currentLocation: string;
   homeLocation: string;
-
-  profileImage: string;
-
+  education: string;
+  college: string;
+  graduationYear: string;
   resumeUrl: string;
-
   email: string;
-
-  availability: "Open to Work" | "Employed" | "Open to Internship";
-
+  availability:
+    | "Open to Work"
+    | "Open to Internship"
+    | "Employed";
   socialLinks: SocialLink[];
-
   ctaButtons: CTAButton[];
 }
