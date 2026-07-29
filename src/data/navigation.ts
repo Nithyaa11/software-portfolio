@@ -7,6 +7,11 @@ export const navigation: NavigationItem[] = [
     href: "#about",
   },
   {
+    id: "skills",
+    label: "Skills",
+    href: "#skills",
+  },
+  {
     id: "experience",
     label: "Experience",
     href: "#experience",
@@ -17,9 +22,14 @@ export const navigation: NavigationItem[] = [
     href: "#projects",
   },
   {
-    id: "skills",
-    label: "Skills",
-    href: "#skills",
+    id: "certifications",
+    label: "Certificates",
+    href: "#certifications",
+  },
+  {
+    id: "leadership",
+    label: "Leadership",
+    href: "#leadership",
   },
   {
     id: "contact",

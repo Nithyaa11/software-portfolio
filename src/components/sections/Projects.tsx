@@ -10,30 +10,30 @@ function Projects() {
       title="Projects"
       description="A selection of projects that showcase my experience in backend development, full stack applications, and problem solving."
     >
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-6 lg:grid-cols-2">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="rounded-2xl border p-8 transition-all hover:shadow-lg"
+            className="group flex h-full flex-col rounded-3xl border border-border/80 bg-card/75 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-xl hover:shadow-black/10 md:p-7"
           >
-            <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-semibold">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <h3 className="text-xl font-semibold tracking-[-0.03em] md:text-2xl">
                 {project.title}
               </h3>
 
               {project.featured && (
-                <span className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                <span className="rounded-full bg-primary/10 px-3.5 py-1.5 text-sm font-semibold text-primary">
                   Featured
                 </span>
               )}
             </div>
 
-            <p className="mt-4 text-muted-foreground">
+            <p className="mt-4 leading-7 text-muted-foreground">
               {project.description}
             </p>
 
-            <ul className="mt-6 list-disc space-y-2 pl-5">
-              {project.highlights.map((highlight) => (
+            <ul className="mt-6 list-disc space-y-2 pl-5 text-sm leading-6 marker:text-primary">
+              {project.highlights.map((highlight: string) => (
                 <li key={highlight}>
                   {highlight}
                 </li>
@@ -41,23 +41,23 @@ function Projects() {
             </ul>
 
             <div className="mt-6 flex flex-wrap gap-2">
-              {project.technologies.map((tech) => (
+              {project.technologies.map((tech: string) => (
                 <span
                   key={tech}
-                  className="rounded-full border px-3 py-1 text-sm"
+                  className="rounded-full border border-border bg-muted/60 px-3 py-1 text-xs font-medium text-muted-foreground"
                 >
                   {tech}
                 </span>
               ))}
             </div>
 
-            <div className="mt-8 flex gap-4">
+            <div className="mt-auto flex flex-wrap gap-3 pt-8">
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-medium hover:underline"
+                  className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-full border border-border bg-background px-4 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:bg-muted hover:shadow-sm sm:w-auto"
                 >
                   <FaGithub className="h-[18px] w-[18px]" />
                   GitHub
@@ -69,7 +69,7 @@ function Projects() {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-medium hover:underline"
+                  className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-full bg-primary px-4 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-md sm:w-auto"
                 >
                   <ExternalLink size={18} />
                   Live Demo

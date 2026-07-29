@@ -15,7 +15,7 @@ export const profile: Profile = {
     "Turning ideas into scalable software through clean engineering and AI.",
 
   shortBio:
-    "Information Technology graduate passionate about Python Full Stack Development and Artificial Intelligence. I enjoy building modern web applications, solving real-world problems, and continuously learning new technologies through hands-on projects.",
+    "Information Technology graduate passionate about building modern web applications and exploring emerging technologies. I believe in learning by building, turning ideas into scalable software that solves real problems and creates value for users. Always eager to collaborate, take on new challenges, and grow through hands-on experience.",
 
   currentLocation: "Hyderabad, Telangana",
 

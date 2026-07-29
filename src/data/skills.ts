@@ -5,9 +5,7 @@ export const skills: SkillCategory[] = [
     title: "Programming Languages",
     skills: [
       "Python",
-      "Java",
       "C",
-      "C++",
       "SQL",
     ],
   },

@@ -16,15 +16,15 @@ function Section({
   return (
     <section
       id={id}
-      className="mx-auto max-w-7xl px-6 py-20 md:py-24"
+      className="mx-auto max-w-7xl scroll-mt-20 px-6 py-12 md:px-8 md:py-14 lg:py-16"
     >
-      <div className="mb-16 text-center">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+      <div className="mb-8 text-center md:mb-10">
+        <h2 className="text-3xl font-bold tracking-[-0.04em] text-foreground md:text-4xl">
           {title}
         </h2>
 
         {description && (
-          <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-muted-foreground md:text-lg">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-muted-foreground md:text-lg">
             {description}
           </p>
         )}

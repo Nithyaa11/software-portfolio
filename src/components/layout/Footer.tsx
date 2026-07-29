@@ -33,6 +33,7 @@ function Footer() {
               href={github.url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit GitHub profile"
               className="transition-transform hover:scale-110"
             >
               <FaGithub className="h-5 w-5" />
@@ -44,6 +45,7 @@ function Footer() {
               href={linkedin.url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit LinkedIn profile"
               className="transition-transform hover:scale-110"
             >
               <FaLinkedin className="h-5 w-5" />
@@ -51,7 +53,7 @@ function Footer() {
           )}
 
           {email && (
-            <a href={email.url}>
+            <a href={email.url} aria-label="Send an email">
               <FaEnvelope className="h-5 w-5" />
             </a>
           )}
