@@ -22,7 +22,7 @@ export const profile: Profile = {
   homeLocation: "Guntur, Andhra Pradesh, India",
   education: "B.Tech in Information Technology",
   college: "Vasireddy Venkatadri Institute of Technology",
-  graduationYear: "2027",
+  graduationYear: "2026",
 
   resumeUrl: "/resume/Nithya_Resume1.pdf",
 
