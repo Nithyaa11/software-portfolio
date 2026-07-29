@@ -16,9 +16,9 @@ export interface Profile {
   tagline: string;
   shortBio: string;
   currentLocation: string;
-  homeLocation: string;
   education: string;
   college: string;
+  cgpa: string;
   graduationYear: string;
   resumeUrl: string;
   email: string;

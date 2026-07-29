@@ -18,10 +18,9 @@ export const profile: Profile = {
     "Information Technology graduate passionate about building modern web applications and exploring emerging technologies. I believe in learning by building, turning ideas into scalable software that solves real problems and creates value for users. Always eager to collaborate, take on new challenges, and grow through hands-on experience.",
 
   currentLocation: "Hyderabad, Telangana",
-
-  homeLocation: "Guntur, Andhra Pradesh, India",
   education: "B.Tech in Information Technology",
   college: "Vasireddy Venkatadri Institute of Technology",
+  cgpa: "8.5 CGPA",
   graduationYear: "2026",
 
   resumeUrl: "/resume/Nithya_Resume1.pdf",

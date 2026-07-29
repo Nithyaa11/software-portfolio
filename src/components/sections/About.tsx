@@ -30,6 +30,10 @@ function About() {
             </p>
 
             <p className="text-muted-foreground">
+              {profile.gpa}
+            </p>
+
+            <p className="text-muted-foreground">
               {profile.graduationYear}
             </p>
           </div>
@@ -39,14 +43,6 @@ function About() {
 
             <p className="mt-3 text-muted-foreground">
               {profile.currentLocation}
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-border/80 bg-card/70 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-lg hover:shadow-black/5">
-            <h3 className="font-semibold">Home</h3>
-
-            <p className="mt-3 text-muted-foreground">
-              {profile.homeLocation}
             </p>
           </div>
 
